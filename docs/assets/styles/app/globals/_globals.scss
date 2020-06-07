@@ -154,10 +154,11 @@ blockquote {
 }
 
 
-.dropdown-menu.show{
-  transform: translate(-65px, 33px)!important;
-  will-change: auto!important;
-}
+ .dropdown-menu.show{
+  //  transform: translate(0px, 33px)!important;
+  //  will-change: transform!important;
+  transform: none !important;
+ }
 
 .company-details-page {
   padding-top: 30px;
@@ -188,3 +189,16 @@ blockquote {
 .on-top {
   z-index: 1000!important;
 }
+
+.pb-0 {
+  padding-bottom: 0px!important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.ng-value {
+  color: #633b3a;
+}
+
