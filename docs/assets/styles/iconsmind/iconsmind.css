@@ -39,13 +39,28 @@ i.fa, i.fas {
     font-family: "FontAwesome"!important;
 }
 
-i.my {
+i.my-36 {
+  font-family: 'icomoon'!important;
+  font-size: 36px!important;
+}
+
+i.my-25 {
   font-family: 'icomoon'!important;
   font-size: 25px!important;
 }
 
+
+
 i.icon {
   font-family: 'icomoon'!important;
+}
+
+.icon-way-bill-o:before {
+  content: "\e902";
+}
+
+.icon-way-bill-s:before {
+  content: "\e901";
 }
 
 .icon-oil-tank:before {

@@ -9,7 +9,10 @@
             }
             &.active {
                 border-bottom: 2px solid $primary;
-                background: rgba($color: $primary, $alpha: .1);
+                div {
+                    color: $black!important;
+                }
+                //background: rgba($color: $primary, $alpha: .1);
             }
         }
     }
