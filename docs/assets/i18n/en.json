@@ -1,0 +1,252 @@
+{
+    "sideNav" : {
+       "dashboard": "Dashboard",
+       "movement": "Movement"
+    },
+    "navigation": {
+        "eod": "EOD",
+        "appl-prop": "Properties",
+        "depot": "Depot",
+        "stakeHolder": "Stake Holder",
+        "company": "Company",
+        "finInstitute": "Financial Institute",
+        "truck": "Truck",
+        "transporter": "Transporter",
+        "retailer": "Retailer",
+        "scheduleJobs": "Schedule Jobs"
+    },
+    "company" : {
+        "title": "Companies",
+        "leftPane": {
+            "searchPlaceHolder": "Search company"
+        },
+        "content": {
+            "defaultContentMsg": "Select a company to view the details."
+        },
+        "form" : {
+            "newHeader": "New Company",
+            "updateHeader": "Update Company",
+            "registrationAttachment": "Registration attachment *",
+            "services": "Services",
+            "contactName": "Contact person name",
+            "messages": {
+                "registrationAttachmentReq": "Registration attachment is required",
+                "selectService": "Please select atleast one service"
+            }
+        }
+    },
+    "depot" : {
+        "form": {
+            "label": {
+                "longitude": "Longitude *",
+                "lattitude": "Lattitude *",
+                "region": "Region *",
+                "tagId": "Depot tag Id",
+                "allowableLossForDepot": "Calculate Allowable loss for the Depot",
+                "transitPoint": "Transit Point",
+                "depotTagId": "Depot tag id",
+                "dispatchCutOff": "Dispatch cut-off time",
+                "dispatchExecutionDate": "Dispatch execution date",
+                "eodExecutionTime" : "Depot EOD execution time",
+                "eodFor": "EOD date"
+            },
+            "placeHolder": {
+                "longitude": "Longitude",
+                "lattitude": "Lattitude",
+                "region": "Region *",
+                "tagId": "Depot tag Id",
+                "selectRegion": "Select region"
+            },
+            "messages":{}
+        }
+
+    },
+    "finInstitute": {
+      "form" :{
+            "label" : {
+                "routingNo": "Routing number *"
+            },
+            "messages": {
+                "routingNoReq": "Routing number is required"
+            },
+            "placeHolder": {
+                "EnterRoutingNo": "Enter routing no"
+
+            }
+      }
+
+    },
+    "truck": {
+        "form": {
+            "label": {
+                "truckNo": "Truck number *",
+                "regCountry": "Registration country",
+                "aviTruck": "Aviation truck",
+                "tagNo": "Truck tag number *",
+                "capacity": "Capacity",
+                "calPerformedBy": "Calibration perfomed by",
+                "calDate": "Calibration date" ,
+                "calExpiryDate": "Calibration expiry date ",
+                "contractId": "Contract id ",
+                "contractStartDate": "Contract start date *",
+                "contractEndDate": "Contract end date *"
+            },
+            "messages": {
+                "truckNoRequired": "Truck number is required.",
+                "tagRequired": "Truck tag id is required."
+
+            }
+        }
+
+    },
+    "transporter": {
+        "form": {
+            "label": {
+                "companyIdNo": "Company identification number *"
+            },
+            "placeHolder":{},
+            "messages": {
+                "routingNoReq":"Routing number is required"
+            }
+        }
+    },
+    "eod" : {
+        "title": "End of day",
+        "infoMsg": "This is functionality to Run a job, View the job history and Client balance by EOD",
+        "tabs" : {
+            "run": "Run",
+            "history": "Job History",
+            "balance": "Balance"
+        },
+        "button" : {
+            "runLabel": "Run"
+        },
+        "placeHolder": {
+            "selectEODDate": "Select EOD date"
+        },
+        "modal": {
+            "title": "Select EOD Date",
+            "eodDateLabel": "EOD date"
+        },
+        "run": {
+            "submitSuccessMsg": "EOD Job successfully submitted"
+        }
+        
+    },
+    "retailer": {
+        "form":{
+            "label":{
+                "retailerCompany": "Retailer Company *",
+                "longitude": "Longitude *",
+                "lattitude": "Lattitude *",
+                "contractId": "Contract id ",
+                "contractStartDate": "Contract start date *",
+                "contractEndDate": "Contract end date *",
+                "stationManager": "Station Manager Name",
+                "asstManager":"Asst. Station Manager Name",
+                "contractLicense": "Retailer Contract License",
+                "region": "Region *"
+            },
+            "placeHolder": {
+                "longitude": "Longitude",
+                "lattitude": "Lattitude",
+                "contractId": "Contract Id",
+                "stationManager": "Station Manager Name",
+                "asstManager":"Asst. Station Manager Name",
+                "region": "Region *"
+
+            },
+            "messages":{}
+        }
+
+    },
+    "appl-prop" : {
+        "title": "Application properties",
+        "infoMsg": "List of application properties",
+        "updateSuccess": "Successfully updated the application property",
+        "updateFailed": "Failed to update the application property"
+    },
+    "common": {
+        "label": {
+            "client": "Client",
+            "depot": "Depot",
+            "product": "Product",
+            "name": "Name *",
+            "status": "Status",
+            "transporters": "Transporters",
+            "registrationNumber": "Registration number *",
+            "imei": "IMEI *",
+            "primaryImei": "Primary IMEI",
+            "secondaryImei": "Secondary IMEI",
+            "address": {
+                "addLine": "Address line",
+                "addLine1": "Address line 1",
+                "addLine2": "Address line 2",
+                "city": "City",
+                "state": "State",
+                "country": "Country",
+                "postCode": "Post code"
+            },
+            "contact": {
+                "email": "Email *",
+                "primaryPhoneNo": "Primary phone no *",
+                "secondaryPhoneNo": "Secondary phone no",
+                "phone": "Phone *"
+            }
+        },
+        "messages": {
+            "noRecordFound": "No records found for given search parameter",
+            "nameRequired": "Name is required",
+            "registrationNoRequired": "Registration number is required",
+            "phoneNoRequired": "Primary phone number is required.",
+            "validPhone": "Primary phone number must be a valid.",
+            "emailRequired": "Email is required",
+            "validEmail": "Email must be a valid email address",
+            "imeiRequired": "IMEI is required.",
+            "imeiMin": "Min 15 digit of IMEI is required"
+
+        },
+        "texts": {
+            "active": "Active",
+            "inactive": "Inactive"
+        },
+        "button" : {
+            "new": "New",
+            "edit": "Edit",
+            "more": "More",
+            "advancedSearch" : "Advanced search",
+            "search": "Search",
+            "clear": "Clear",
+            "showAudit": "Show audit",
+            "save": "Save",
+            "submit": "Submit",
+            "approve": "Approve",
+            "cancel": "Cancel",
+            "close": "Close",
+            "add": "Add",
+            "ok": "Ok",
+            "subscribe": "Subscribe notification"
+        },
+        "placeHolder": {
+            "selectDepot": "Select depot",
+            "selectJobType": "Select job type",
+            "selectClient": "Select client",
+            "selectCompany": "Select Company",
+            "name": "Name",
+            "enterName": "Enter name",
+            "selectStatus": "Select status",
+            "selectCountry": "Select country",
+            "phoneMask": "(999) 999-9999",
+            "egMailId":"Eg: john.watt@xyz.com",
+            "6DiditCode": "Enter 6 digit code",
+            "selectValue": "Select value",
+            "selectTransporter": "Select transporter",
+            "15DiditCode": "Enter 15 digit code",
+            "Imei": "Enter 15 digit code",
+            "dateFormat": "yyyy-mm-dd",
+            "registrationNo": "Registration number",
+            "primaryImei": "Primary IMEI",
+            "secondaryImei": "Secondary IMEI"
+        }   
+    }
+}
