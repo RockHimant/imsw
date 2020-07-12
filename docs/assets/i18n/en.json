@@ -20,7 +20,8 @@
         "airport": "Airport",
         "users": "Users",
         "client": "Client",
-        "region": "Region"
+        "region": "Region",
+        "tankConfig": "Tank Configuration"
     },
 
     "airline": {
@@ -61,15 +62,38 @@
         "updateSuccess": "Successfully updated the application property",
         "updateFailed": "Failed to update the application property"
     },
+    "cargoTracking": {
+        "title": {
+            "newCargo": "New Cargo Tracking",
+            "updateCargo": "Update Cargo Tracking"
+        },
+        "header": {
+            "primaryDetails": "Primary Details"
+
+        },
+        "label": {
+            "transactionNo": "Transaction Number",
+            "trackingName": "Cargo Tracking Name",
+            "cargoStatus": "Cargo Status",
+            "vesselType": "Vessel Type",
+            "imo": "IMO",
+            "length": "Length",
+            "breadth": "Breadth",
+            "flag": "Flag"
+
+            
+        }
+
+    },
 
     "client": {
         "label": {
-            "clientType": "Client type",
-            "clientGroup": "Client association group",
+            "clientType": "Client Type",
+            "clientGroup": "Client Association Group",
             "mainClient": "Main Client",
             "accounts": "Accounts",
             "contractId": "Contract Id ",
-            "contractStartDate": "Contract start date *",
+            "contractStartDate": "Contract Start Date *",
             "contractEndDate": "Contract End Date *",
             "notificationSub": "Notification Subscription"
         },
@@ -99,10 +123,12 @@
             "productType": "Product Type",
             "transporters": "Transporter",
             "subClient": "Sub Client",
-            "truckNo": "Truck number *",
-            "driverName": "Driver name",
+            "truckNo": "Truck Number *",
+            "driverName": "Driver Name",
             "retailer": "Retailer",
             "description": "Description *",
+            "chooseFile": "Choose File",
+            
            
             "name": "Name *",
             "status": "Status",
@@ -114,6 +140,8 @@
             "referenceNo": "Reference No *",
             "attachment": "Attachment *",
             "total": "Total",
+            "capacity": "Capacity",
+            "capacityLtr": "Capacity in Litres",
             
             "address": {
                 "addLine": "Address Line",
@@ -126,8 +154,8 @@
             },
             "contact": {
                 "email": "Email *",
-                "primaryPhoneNo": "Primary phone no *",
-                "secondaryPhoneNo": "Secondary phone no",
+                "primaryPhoneNo": "Primary Phone No *",
+                "secondaryPhoneNo": "Secondary Phone No",
                 "phone": "Phone *"
             }
         },
@@ -145,6 +173,7 @@
             "depotReq": " Depot is required",
             "desRequired": "Description is required",
             
+            
             "imeiMin": "Min 15 digit of IMEI is required",
            
             "invalidPostCode": "Invalid post code",
@@ -155,16 +184,20 @@
         "texts": {
             "active": "Active",
             "inactive": "Inactive",
-            "litres": "Litres"
+            "litres": "Litres",
+            "mm": "mm",
+            "kgs": "Kgs",
+            "meter": "Meter",
+            "longTon": "Long Ton"
         },
         "button" : {
             "new": "New",
             "edit": "Edit",
             "more": "More",
-            "advancedSearch" : "Advanced search",
+            "advancedSearch" : "Advanced Search",
             "search": "Search",
             "clear": "Clear",
-            "showAudit": "Show audit",
+            "showAudit": "Show Audit",
             "save": "Save",
             "submit": "Submit",
             "approve": "Approve",
@@ -192,6 +225,7 @@
             "selectValue": "Select value",
             "selectRetailer":"Select Retailer",
             "enterDescription": "Enter description",
+            
             
             "name": "Name",
             "enterName": "Enter name",
@@ -222,7 +256,7 @@
     "company" : {
         "title": "Companies",
         "leftPane": {
-            "searchPlaceHolder": "Search company"
+            "searchPlaceHolder": "Search Company"
         },
         "content": {
             "defaultContentMsg": "Select a company to view the details."
@@ -230,9 +264,9 @@
         "form" : {
             "newHeader": "New Company",
             "updateHeader": "Update Company",
-            "registrationAttachment": "Registration attachment *",
+            "registrationAttachment": "Registration Attachment *",
             "services": "Services",
-            "contactName": "Contact person name",
+            "contactName": "Contact Person Name",
             "messages": {
                 "registrationAttachmentReq": "Registration attachment is required",
                 "selectService": "Please select atleast one service"
@@ -245,14 +279,14 @@
                 "longitude": "Longitude *",
                 "lattitude": "Lattitude *",
                 "region": "Region *",
-                "tagId": "Depot tag Id",
-                "allowableLossForDepot": "Calculate Allowable loss for the Depot",
+                "tagId": "Depot Tag Id",
+                "allowableLossForDepot": "Calculate Allowable Loss for the Depot",
                 "transitPoint": "Transit Point",
-                "depotTagId": "Depot tag id",
-                "dispatchCutOff": "Dispatch cut-off time",
-                "dispatchExecutionDate": "Dispatch execution date",
-                "eodExecutionTime" : "Depot EOD execution time",
-                "eodFor": "EOD date",
+                "depotTagId": "Depot Tag Id",
+                "dispatchCutOff": "Dispatch Cut-Off Time",
+                "dispatchExecutionDate": "Dispatch Execution Date",
+                "eodExecutionTime" : "Depot EOD Execution time",
+                "eodFor": "EOD Date",
                 "tankConfiguration": "Tank Configuration"
             },
             "placeHolder": {
@@ -273,10 +307,10 @@
     },
     "dispatch": {
         "label": {
-            "interDepotTransfer": " Inter depot transfer",
-            "custName": "Customer name *",
-            "shippingTruck": "Shipping trucks",
-            "collectOrderNo": "Collection order number"
+            "interDepotTransfer": " Inter Depot Transfer",
+            "custName": "Customer Name *",
+            "shippingTruck": "Shipping Trucks",
+            "collectOrderNo": "Collection Order Number"
             
 
         },
@@ -440,13 +474,39 @@
         "forms": {
             "label":{
                 "owner": "Owner",
-                "storeLogo": "Srore Logo",
-                "chooseFile": "Choose File"
+                "storeLogo": "Srore Logo"
             },
             "placeHolder":{},
             "messages":{
                 "onlyImage": "Only images can be uploaded."
             }
+        }
+
+    },
+    "tank": {
+        "label": {
+            "tankNo": "tank Number",
+            "tankType": "Tank type",
+            "tankRoof": "Tank roof type",
+            "calDate": "Calibration date" ,
+            "calExpiryDate": "Calibration expiry date ",
+            "nominalHeight": "Tank nominal height",
+            "nomHeightLtr": "Tank nominal height (litres)",
+            "safeHeight": "Tank safe filling height",
+            "safeHeightLtr": "Tank safe filling height (litres)",
+            "roofWeight": "Roof weight",
+            "roofFloatLevel": "Roof Floating Level",
+            "prodAttachment": "Product caliberation chart",
+            "waterAttachment": "Water caliberation chart",
+            "balance": "Balance"
+        },
+        "placeHolder": {
+            "selectTank": "Select tank type",
+            "selectRoof": "Select tank roof"
+        },
+        "messages": {
+            "prodTypeReq":"Prod type is required",
+            "tankNoReq": "Tank number is required"
         }
 
     },
@@ -466,17 +526,17 @@
     "truck": {
         "form": {
             "label": {
-                "truckNo": "Truck number *",
-                "regCountry": "Registration country",
-                "aviTruck": "Aviation truck",
-                "tagNo": "Truck tag number *",
+                "truckNo": "Truck Number *",
+                "regCountry": "Registration Country",
+                "aviTruck": "Aviation Truck",
+                "tagNo": "Truck Tag Number *",
                 "capacity": "Capacity",
-                "calPerformedBy": "Calibration perfomed by",
-                "calDate": "Calibration date" ,
-                "calExpiryDate": "Calibration expiry date ",
-                "contractId": "Contract id ",
-                "contractStartDate": "Contract start date *",
-                "contractEndDate": "Contract end date *"
+                "calPerformedBy": "Calibration Perfomed By",
+                "calDate": "Calibration Date" ,
+                "calExpiryDate": "Calibration Expiry Date ",
+                "contractId": "Contract Id ",
+                "contractStartDate": "Contract Start Date *",
+                "contractEndDate": "Contract End Date *"
             },
             "messages": {
                 "truckNoRequired": "Truck number is required.",
