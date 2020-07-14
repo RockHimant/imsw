@@ -71,6 +71,10 @@ i.icon {
   content: "\e976";
 }
 
+.icon-presale:before {
+  content: "\e903";
+}
+
 .icon-key2:before {
   content: "\e98e";
 }
