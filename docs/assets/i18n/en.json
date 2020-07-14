@@ -21,7 +21,16 @@
         "users": "Users",
         "client": "Client",
         "region": "Region",
-        "tankConfig": "Tank Configuration"
+        "tankConfig": "Tank Configuration",
+        "user": "User",
+        "colManage": "Colleteral Management",
+        "cargoTrack": "Cargo Tracking",
+        "movement": "Movement",
+        "finTrans": "Fiancier Transaction",
+        "qtySurveyor": "Quantity Surveyor",
+        "receipt": "Delivery Receipt",
+        "tankDip": "Tank Dip"
+
     },
 
     "airline": {
@@ -132,6 +141,7 @@
            
             "name": "Name *",
             "status": "Status",
+            
             
             "registrationNumber": "Registration Number *",
             "imei": "IMEI *",
@@ -545,6 +555,24 @@
             }
         }
 
+    },
+    "user": {
+        "label": {
+            "userType": "User Type *",
+            "firstName": "First Name *",
+            "userName": "User Name *",
+            "lastName": "Last Name *",
+            "password": "Password",
+            "reTypePassword": "Re-type Password *",
+            "language": "Preferred Language *",
+            "pageCount": "Default Result page Count",
+            "supervisor": "Supervisor Username"
+
+
+        },
+        "messages": {
+            "passwordReq": "Password is required"
+        }
     }
     
    
