@@ -141,7 +141,7 @@
            
             "name": "Name *",
             "status": "Status",
-            
+
             
             "registrationNumber": "Registration Number *",
             "imei": "IMEI *",
@@ -566,9 +566,12 @@
             "reTypePassword": "Re-type Password *",
             "language": "Preferred Language *",
             "pageCount": "Default Result page Count",
-            "supervisor": "Supervisor Username"
-
-
+            "supervisor": "Supervisor Username",
+            "organization": "Organization",
+            "depot": "Depot"
+        },
+        "placeholder" : {
+            "selectUserType": "Select user type"
         },
         "messages": {
             "passwordReq": "Password is required"
