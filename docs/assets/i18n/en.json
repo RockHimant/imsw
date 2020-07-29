@@ -30,7 +30,8 @@
         "qtySurveyor": "Quantity Surveyor",
         "receipt": "Delivery Receipt",
         "tankDip": "Tank Dip",
-        "movementReceipt" : "Receipt"
+        "movementReceipt" : "Receipt",
+        "roles": "Roles"
 
     },
 
