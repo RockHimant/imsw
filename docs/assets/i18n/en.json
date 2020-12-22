@@ -1,40 +1,51 @@
 {
-    "sideNav" : {
-       "dashboard": "Dashboard",
-       "movement": "Movement"
-    },
     "navigation": {
-        "eod": "EOD",
         "appl-prop": "Properties",
-        "depot": "Depot",
-        "stakeHolder": "Stake Holder",
-        "company": "Company",
-        "finInstitute": "Financial Institute",
-        "truck": "Truck",
-        "transporter": "Transporter",
-        "retailer": "Retailer",
-        "scheduleJobs": "Schedule Jobs",
-        "retailCompany": "Retailer Company",
         "aviation": "Aviation",
+        "aviationDelivery": "Aviation Delivery",
         "airline": "Airline",
         "airport": "Airport",
-        "users": "Users",
         "client": "Client",
-        "region": "Region",
-        "tankConfig": "Tank Configuration",
-        "user": "User",
+        "clients": "Clients",
+        "clientLedger": "Client Ledger",
+        "company": "Company",
         "colManage": "Colleteral Management",
         "cargoTrack": "Cargo Tracking",
-        "movement": "Movement",
+        "dashboard": "Dashboard",
+        "depot": "Depot",
+        "dispatch": "Dispatch",
+        "eod": "EOD",
+        "finInstitute": "Financial Institute",
         "finTrans": "Financier Transaction",
+        "genReport": "Generated reports",
+        "inventory": "Inventory",
+        "inventoryBalance": "Inventory Balance",
+        "movement": "Movement",
+        "movementReceipt": "Receipt",
+        "preSale": "Pre Sale",
         "qtySurveyor": "Quantity Surveyor",
+        "retailer": "Retailer",
+        "retailCompany": "Retailer Company",
+        "region": "Region",
         "receipt": "Delivery Receipt",
+        "reportTemplate": "Report template",
+        "reports": "Reports",
+        "roles": "Roles",
+        "stakeHolder": "Stake Holder",
+        "scheduleJobs": "Schedule Jobs",
+        "swapNRelease": "Swap And Release",
+        "truck": "Truck",
+        "transporter": "Transporter",
+        "tankConfig": "Tank Configuration",
         "tankDip": "Tank Dip",
-        "movementReceipt" : "Receipt",
-        "roles": "Roles"
-
+        "truckLedger": "Truck Ledger",
+        "users": "Users",
+        "user": "User",
+        "tankTransfer": "Tank transfer",
+        "waybill": "Waybill",
+        "waybillDelivery": "Waybill Delivery",
+        "receipt1": "Receipt"
     },
-
     "airline": {
         "label": {
             "airlineCode": " Airline Code *",
@@ -54,20 +65,18 @@
             "contactNameReq": "Contact Name is required",
             "contactPhReq": "Contact Phone is required"
         }
-
     },
-    "airport":{
+    "airport": {
         "label": {
             "airportCode": " Airport Code *",
             "airportName": "Airport Name *"
         },
-        "placeHolder":{
+        "placeHolder": {
             "airportName": "Airport Name",
             "airportCode": "Airport Code"
         }
-
     },
-    "appl-prop" : {
+    "appl-prop": {
         "title": "Application Properties",
         "infoMsg": "List of Application Properties",
         "updateSuccess": "Successfully updated the application property",
@@ -76,27 +85,64 @@
     "cargoTracking": {
         "title": {
             "newCargo": "New Cargo Tracking",
-            "updateCargo": "Update Cargo Tracking"
+            "updateCargo": "Update Cargo Tracking",
+            "searchFiTrans": "Search FI-Transaction"
         },
         "header": {
-            "primaryDetails": "Primary Details"
-
+            "primaryDetails": "Primary Details",
+            "transData": "Transaction Data"
         },
         "label": {
-            "transactionNo": "Transaction Number",
-            "trackingName": "Cargo Tracking Name",
-            "cargoStatus": "Cargo Status",
-            "vesselType": "Vessel Type",
+            "transactionNo": "Transaction Number *",
+            "trackingName": "Cargo Tracking Name *",
+            "cargoStatus": "Cargo Status *",
+            "vesselType": "Vessel Type *",
             "imo": "IMO",
             "length": "Length",
             "breadth": "Breadth",
-            "flag": "Flag"
-
-            
+            "flag": "Flag *",
+            "height": "Height",
+            "deadweight": "Dead Weight",
+            "callSign": "Call Sign *",
+            "mmsi": "MMSI *",
+            "sourcePort": "Source Port *",
+            "expDepart": "Expected Departure",
+            "expArrival": "Expected Arrival*",
+            "actualDepart": "Actual Departure",
+            "actualArrival": "Actual Arrival",
+            "expectedQty": "Expected Quantity *",
+            "qtyDischarged": "Quantity Discharged",
+            "density": "Density",
+            "temperature": "Temperature",
+            "initialMtrReading": "Initial Meter Reading",
+            "finalMtrReading": "Final Meter Reading",
+            "waterDip": "Water Dip",
+            "qtySurveryor": "Quantity Surveyor",
+            "qtyCtrlName": "Quantity Control Person *",
+            "QtyControlPh": "Quantity Control Phone No*",
+            "captainName": "Captain Name *",
+            "captainPhNo": "Captain Phone No *",
+            "toDepot": "To Depot",
+            "destinationPort": "From Depot",
+            "destCity": "Destination City",
+            "destCountry": "Destination Country",
+            "financier": "Financier",
+            "colManagement": "Collateral Management"
+        },
+        "placeHolder": {
+            "transactionNo": "Transaction number",
+            "trackingName": "Cargo Tracking Name",
+            "selectVesselType": "Select vessel type"
+        },
+        "messages": {
+            "flagRequired": "Flag is required",
+            "callSignReq": "Call sign is required",
+            "mmsiRequired": "MMSI is required",
+            "sourcePortReq": "Source Port is required",
+            "expQtyRequired": "Expected Quantity is required",
+            "phoneNoRequired": "Phone No is required"
         }
-
     },
-
     "client": {
         "label": {
             "clientType": "Client Type",
@@ -104,8 +150,8 @@
             "mainClient": "Main Client",
             "accounts": "Accounts",
             "contractId": "Contract Id ",
-            "contractStartDate": "Contract Start Date *",
-            "contractEndDate": "Contract End Date *",
+            "contractStartDate": "Contract Start Date",
+            "contractEndDate": "Contract End Date",
             "notificationSub": "Notification Subscription"
         },
         "placeHolder": {
@@ -115,24 +161,21 @@
             "selectTag": "Select user or add custom tag",
             "selectEvent": "Select event type",
             "emailId": "Comma separated email addresses"
-            
         },
-        "messages":{
-            "clientReq": "Client type is required."
+        "messages": {
+            "clientReq": "Client type is required"
         },
         "button": {
             "add": "Add"
         }
-        
     },
-    
     "common": {
         "label": {
             "client": "Client",
             "depot": "Depot",
             "product": "Product",
             "productType": "Product Type",
-            "transporters": "Transporter",
+            "transporter": "Transporter",
             "subClient": "Sub Client",
             "truckNo": "Truck Number *",
             "driverName": "Driver Name",
@@ -140,13 +183,9 @@
             "description": "Description *",
             "chooseFile": "Choose File",
             "notificationSubscription": "Notification Subscription",
-            
-           
-            "name": "Name *",
+            "name": "Name",
             "status": "Status",
-
-            
-            "registrationNumber": "Registration Number *",
+            "registrationNumber": "Registration Number",
             "imei": "IMEI *",
             "primaryImei": "Primary IMEI",
             "secondaryImei": "Secondary IMEI",
@@ -155,7 +194,7 @@
             "total": "Total",
             "capacity": "Capacity",
             "capacityLtr": "Capacity in Litres",
-            
+            "truck": "Truck",
             "address": {
                 "addLine": "Address Line",
                 "addLine1": "Address line 1",
@@ -174,25 +213,23 @@
         },
         "messages": {
             "noRecordFound": "No records found for given search parameter",
-            
             "nameRequired": "Name is required",
             "registrationNoRequired": "Registration number is required",
             "phoneNoRequired": "Primary phone number is required.",
             "emailRequired": "Email is required",
-            "imeiRequired": "IMEI is required.",
+            "imeiRequired": "IMEI is required",
             "dateRequired": "Date is required",
             "attachrequired": "Attachment is required",
             "clientReq": "Client is required",
             "depotReq": " Depot is required",
             "desRequired": "Description is required",
-            
-            
             "imeiMin": "Min 15 digit of IMEI is required",
-           
             "invalidPostCode": "Invalid post code",
-            "validPhone": "Primary phone number must be a valid.",
-            "validEmail": "Email must be a valid email address"
-
+            "validPhone": "Primary phone number must be a valid",
+            "validEmail": "Email must be a valid email address",
+            "conStDateRequired": "Contract start date is required.",
+            "conEnDateRequired": "Contract end date is required."
+            
         },
         "texts": {
             "active": "Active",
@@ -201,13 +238,14 @@
             "mm": "mm",
             "kgs": "Kgs",
             "meter": "Meter",
-            "longTon": "Long Ton"
+            "longTon": "Long Ton",
+            "metricTon": "Metric Ton"
         },
-        "button" : {
+        "button": {
             "new": "New",
             "edit": "Edit",
             "more": "More",
-            "advancedSearch" : "Advanced Search",
+            "advancedSearch": "Advanced Search",
             "search": "Search",
             "clear": "Clear",
             "showAudit": "Show Audit",
@@ -221,8 +259,11 @@
             "subscribe": "Subscribe notification",
             "clickToAdd": "Click to add",
             "discard": "Discard",
-            "reject": "Reject"
-            
+            "reject": "Reject",
+            "create": "Create",
+            "yes": "Yes",
+            "no": "No",
+            "resetPassword": "Reset Password"
         },
         "placeHolder": {
             "selectDepot": "Select depot",
@@ -236,27 +277,21 @@
             "selectCountry": "Select country",
             "selectStatus": "Select status",
             "selectValue": "Select value",
-            "selectRetailer":"Select Retailer",
+            "selectRetailer": "Select Retailer",
             "enterDescription": "Enter description",
             "selectFinancier": "Select financier",
             "selectWorkflowStatus": "Select workflow status",
-            
-            
             "name": "Name",
             "enterName": "Enter name",
             "driverName": "Driver name",
-            
             "phoneMask": "(999) 999-9999",
-            "egMailId":"Eg: john.watt@xyz.com",
+            "egMailId": "Eg: john.watt@xyz.com",
             "postCode": "Enter 6 digit code",
-            
-           
             "imei": "Enter 15 digit code",
             "dateFormat": "yyyy-mm-dd",
             "registrationNo": "Registration number",
             "primaryImei": "Primary IMEI",
             "secondaryImei": "Secondary IMEI",
-           
             "address": {
                 "addLine": "Address line",
                 "addLine1": "Address line 1",
@@ -266,9 +301,9 @@
                 "country": "country",
                 "postCode": "Post code"
             }
-        }   
+        }
     },
-    "company" : {
+    "company": {
         "title": "Companies",
         "leftPane": {
             "searchPlaceHolder": "Search Company"
@@ -276,7 +311,7 @@
         "content": {
             "defaultContentMsg": "Select a company to view the details."
         },
-        "form" : {
+        "form": {
             "newHeader": "New Company",
             "updateHeader": "Update Company",
             "registrationAttachment": "Registration Attachment *",
@@ -286,9 +321,17 @@
                 "registrationAttachmentReq": "Registration attachment is required",
                 "selectService": "Please select atleast one service"
             }
+        },
+        "label": {
+            "depotFacility": "Depot Facility",
+            "finService": "Financial Services",
+            "coastAllocation": "Coastal Allocation",
+            "retailer": "Retailer",
+            "productImport": "Product Import",
+            "transService": "Transport Services"
         }
     },
-    "depot" : {
+    "depot": {
         "form": {
             "label": {
                 "longitude": "Longitude *",
@@ -300,7 +343,7 @@
                 "depotTagId": "Depot Tag Id",
                 "dispatchCutOff": "Dispatch Cut-Off Time",
                 "dispatchExecutionDate": "Dispatch Execution Date",
-                "eodExecutionTime" : "Depot EOD Execution time",
+                "eodExecutionTime": "Depot EOD Execution time",
                 "eodFor": "EOD Date",
                 "tankConfiguration": "Tank Configuration"
             },
@@ -316,9 +359,8 @@
                 "eodExecTime": "EOD execution time",
                 "eodDate": "EOD date"
             },
-            "messages":{}
+            "messages": {}
         }
-
     },
     "dispatch": {
         "label": {
@@ -327,31 +369,26 @@
             "shippingTruck": "Shipping Trucks",
             "collectOrderNo": "Collection Order Number",
             "releaseRequest": "Release Request"
-            
-
         },
-        "placeHolder":{
+        "placeHolder": {
             "mainClient": "Select main client",
             "subClient": "Select sub client"
-
         },
-        "messages":{
+        "messages": {
             "availBal": "Available balance: ",
             "custNameReq": "Customer name is required",
             "dispDetails": "Please fill in all details for dispatch truck"
-
         }
-
     },
-    "eod" : {
+    "eod": {
         "title": "End of day",
         "infoMsg": "This is functionality to Run a job, View the job history and Client balance by EOD",
-        "tabs" : {
+        "tabs": {
             "run": "Run",
             "history": "Job History",
             "balance": "Balance"
         },
-        "button" : {
+        "button": {
             "runLabel": "Run"
         },
         "placeHolder": {
@@ -364,47 +401,42 @@
         "run": {
             "submitSuccessMsg": "EOD Job successfully submitted"
         }
-        
     },
     "finInstitute": {
-        "form" :{
-              "label" : {
-                  "routingNo": "Routing number *"
-              },
-              "messages": {
-                  "routingNoReq": "Routing number is required"
-              },
-              "placeHolder": {
-                  "EnterRoutingNo": "Enter routing no"
-  
-              }
+        "form": {
+            "label": {
+                "routingNo": "Routing number *"
+            },
+            "messages": {
+                "routingNoReq": "Routing number is required"
+            },
+            "placeHolder": {
+                "EnterRoutingNo": "Enter routing no"
+            }
         }
-  
-      },
-      "fiTransaction": {
-          "label": {
-              "colManagement": "Colleteral Management",
-              "financier": "Financier",
-              "destinationPort": "Destination port",
-              "destinationCity": "Destination city",
-              "destinationCountry": "Destination country",
-              "quantSurveyor": "Quantity Surveyor",
-              "expQuant": "Expected Quantity"
-          },
-          "placeHolder": {
-              "selectColCompany": "Select collateral company",
-              "selectFin": "Select financier",
-              "selectPort": "Select destination port",
-              "selectSurveyor": "Select quantity surveyor"
-              
-          },
-          "messages":{},
-          "footer": {
-              "addNew": "Add New"
-          }
-
-      },
-      "inventoryBal": {
+    },
+    "fiTransaction": {
+        "label": {
+            "colManagement": "Colleteral Management",
+            "financier": "Financier",
+            "destinationPort": "Destination Port",
+            "destinationCity": "Destination City",
+            "destinationCountry": "Destination Country",
+            "quantSurveyor": "Quantity Surveyor",
+            "expQuant": "Expected Quantity"
+        },
+        "placeHolder": {
+            "selectColCompany": "Select collateral company",
+            "selectFin": "Select financier",
+            "selectPort": "Select destination port",
+            "selectSurveyor": "Select quantity surveyor"
+        },
+        "messages": {},
+        "footer": {
+            "addNew": "Add New"
+        }
+    },
+    "inventoryBal": {
         "form": {
             "label": {
                 "currentBal": "Current Balance",
@@ -415,130 +447,162 @@
             },
             "placeHolder": {
                 "selectAdjustType": "Select Adjustment Type"
-
             },
-            "messages": {
-               
-            },
+            "messages": {},
             "button": {
                 "clickToAdd": "Click to add"
             },
             "litres": "Litres"
         }
     },
-      "repTemplate": {
-          "label": {
+    "repTemplate": {
+        "label": {
             "fromDate": "From Date *",
             "toDate": "To Date *",
             "date": "Date *",
-            "reportName": "Name of the generated report *",
+            "reportName": "Name of the Generated Report *",
             "format": "Format",
-            "searchByDuration": "Search by duration",
-            "searchByDate": "Search by date range ",
+            "searchByDuration": "Search by Duration",
+            "searchByDate": "Search by Date Range ",
             "duration": "Duration in hrs *",
-            "allApproved": "Include all approved:",
-            "dispDepot": "Dispatch depot *"
-
-          },
+            "allApproved": "Include All Approved:",
+            "dispDepot": "Dispatch Depot *",
+            "destination": "Destination",
+            "destState": "Destination State",
+            "driver": "Driver",
+            "referenceDate": "Reference Date *",
+            "deliveryType": "Delivery Type",
+            "wayBillStatus": "Waybill Status"
+        },
         "placeHolder": {
             "selectFormat": "Select format"
-
         },
         "messages": {
             "ReportNameRequired": "Report name is required",
             "durationReq": " Duration is required"
-
         },
         "button": {
             "generate": "Generate",
             "reset": "Reset"
-
         }
-
-      },
-      "retailer": {
-        "form":{
-            "label":{
+    },
+    "retailer": {
+        "form": {
+            "label": {
                 "retailerCompany": "Retailer Company *",
                 "longitude": "Longitude *",
                 "lattitude": "Lattitude *",
                 "contractId": "Contract Id ",
-                "contractStartDate": "Contract start date *",
-                "contractEndDate": "Contract End Date *",
+                "contractStartDate": "Contract Start Date",
+                "contractEndDate": "Contract End Date",
                 "stationManager": "Station Manager Name",
-                "asstManager":"Asst. Station Manager Name",
+                "asstManager": "Asst. Station Manager Name",
                 "contractLicense": "Retailer Contract License",
-                "region": "Region *"
+                "region": "Region"
             },
             "placeHolder": {
                 "longitude": "Longitude",
                 "lattitude": "Lattitude",
                 "contractId": "Contract Id",
                 "stationManager": "Station Manager Name",
-                "asstManager":"Asst. Station Manager Name",
+                "asstManager": "Asst. Station Manager Name",
                 "region": "Region *"
-
             },
-            "messages":{}
+            "messages": {}
         }
-
     },
-
-    
     "retailCompany": {
         "title": "Companies",
         "forms": {
-            "label":{
+            "label": {
                 "owner": "Owner",
                 "storeLogo": "Srore Logo"
             },
-            "placeHolder":{},
-            "messages":{
-                "onlyImage": "Only images can be uploaded."
+            "placeHolder": {
+                "selectOwner": "Select owner"
+            },
+            "messages": {
+                "onlyImage": "Only images can be uploaded"
             }
         }
-
+    },
+    "scheduleJobs": {
+        "header": {
+            "scheduleDetails": "Schedule Details",
+            "jobDetails": "Job Details"
+        },
+        "label": {
+            "frequency": "Frequency *",
+            "freq": {
+                "every": "Every",
+                "startTime": "Start Time",
+                "endTime": "End Time",
+                "time": "Time",
+                "dayOfWeek": "Day of Week",
+                "dayOfMonth": "Day of Month",
+                "monOfYear": "Month of Year"
+            },
+            "jobName": "Job Name *",
+            "jobType": "Job Type *",
+            "reportTepm": "Report Template *",
+            "reportAccess": "Report Owner Access",
+            "owner": "Owner"
+        },
+        "placeHolder": {
+            "selectFrequency": "Select frequency",
+            "selectJobType": "Select job type",
+            "selectOwnerAccess": "Select owner access",
+            "select": "Select",
+            "selectNumber": "Number between 1 and 31"
+        },
+        "texts": {
+            "hours": "Hours",
+            "hh": "HH",
+            "mm": "MM"
+        }
     },
     "tank": {
         "label": {
-            "tankNo": "tank Number",
-            "tankType": "Tank type",
-            "tankRoof": "Tank roof type",
-            "calDate": "Calibration date" ,
-            "calExpiryDate": "Calibration expiry date ",
-            "nominalHeight": "Tank nominal height",
-            "nomHeightLtr": "Tank nominal height (litres)",
-            "safeHeight": "Tank safe filling height",
-            "safeHeightLtr": "Tank safe filling height (litres)",
-            "roofWeight": "Roof weight",
+            "tankNo": "Tank Number",
+            "tankType": "Tank Type",
+            "tankRoof": "Tank Roof Type",
+            "calDate": "Calibration Date",
+            "calExpiryDate": "Calibration Expiry Date ",
+            "nominalHeight": "Tank Nominal Height",
+            "nomHeightLtr": "Tank Nominal Height (litres)",
+            "safeHeight": "Tank Safe Filling Height",
+            "safeHeightLtr": "Tank Safe Filling Height (litres)",
+            "roofWeight": "Roof Weight",
             "roofFloatLevel": "Roof Floating Level",
-            "prodAttachment": "Product caliberation chart",
-            "waterAttachment": "Water caliberation chart",
-            "balance": "Balance"
+            "prodAttachment": "Product Caliberation Chart",
+            "waterAttachment": "Water Caliberation Chart",
+            "balance": "Balance",
+            "capacityFrom": "Capacity From",
+            "capacityTo": "Capacity To"
         },
         "placeHolder": {
             "selectTank": "Select tank type",
             "selectRoof": "Select tank roof"
         },
         "messages": {
-            "prodTypeReq":"Prod type is required",
+            "prodTypeReq": "Prod type is required",
             "tankNoReq": "Tank number is required"
         }
-
     },
     "transporter": {
         "form": {
             "label": {
-                "companyIdNo": "Company identification number *"
+                "companyIdNo": "Company Identification Number",
+                "newHeader": "New Transporter",
+                "updateHeader": "Update Transporter"
             },
-            "placeHolder":{},
+            "placeHolder": {},
             "messages": {
-                "routingNoReq":"Routing number is required"
+                "routingNoReq": "Routing number is required",
+                "companyIdentificationNoReq": "Company Identification number is required"
             }
         }
     },
-    
-   
     "truck": {
         "form": {
             "label": {
@@ -548,19 +612,17 @@
                 "tagNo": "Truck Tag Number *",
                 "capacity": "Capacity",
                 "calPerformedBy": "Calibration Perfomed By",
-                "calDate": "Calibration Date" ,
+                "calDate": "Calibration Date",
                 "calExpiryDate": "Calibration Expiry Date ",
                 "contractId": "Contract Id ",
-                "contractStartDate": "Contract Start Date *",
-                "contractEndDate": "Contract End Date *"
+                "contractStartDate": "Contract Start Date",
+                "contractEndDate": "Contract End Date"
             },
             "messages": {
-                "truckNoRequired": "Truck number is required.",
-                "tagRequired": "Truck tag id is required."
-
+                "truckNoRequired": "Truck number is required",
+                "tagRequired": "Truck tag id is required"
             }
         }
-
     },
     "user": {
         "label": {
@@ -574,18 +636,14 @@
             "pageCount": "Default Result page Count",
             "supervisor": "Supervisor Username",
             "organization": "Organization",
-            "depot": "Depot"
+            "depot": "Depot",
+            "resetPassword": "Change Password"
         },
-        "placeholder" : {
+        "placeholder": {
             "selectUserType": "Select user type"
         },
         "messages": {
             "passwordReq": "Password is required"
         }
     }
-    
-   
-   
-   
-    
 }
